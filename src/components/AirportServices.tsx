@@ -31,7 +31,7 @@ const serviceCards = [
   {
     title: "Airport Pickup",
     description: "Reliable airport pickups with flight tracking and meet & greet.",
-    image: "/airport/V9qx1u98rbjUguNoRNDtsjR7Rhi2N_UuRxGO__5_ajwM93-ynkiYu40xSG-tVz0m1nzJrChrPvodvcgu29LvNFgGUqIeU-NwuDRJbklXH9m4W_t8wU7UOYlnUrry8BYRB_CaJUo3JFAN2L89tpaMHA9C8arlIkIdZd0PJTPbBnc.jpg",
+    image: "/airport/airport (1).jpg",
     details: [
       "✈ Real-Time Flight Tracking",
       "🤝 Meet & Greet at Arrival Gate",
@@ -47,7 +47,7 @@ const serviceCards = [
   {
     title: "Airport Drop",
     description: "Timely drops to ensure you never miss your flight.",
-    image: "/airport/tZSPJQb_rdli6V2pm8p7EPa-yvvTjP5P1IEkXskqG-r4-HoPrO-edFR-VeqjOZIJlsZgQVSnOUVenRssf9PVET8CPg4OwPONTDCpWCJyD407URfKtuakBYwHHX6CIATaWxie8xpkRJ5rCzlDhJzps_iYTtEquSN1sUE_wVlg_M8imtjBlvcZXpQr8y6O0fAH.jpg",
+    image: "/airport/airport (2).jpg",
     details: [
       "🚖 Door-to-Airport Transfer",
       "⏰ On-Time Pickup from Your Location",
@@ -62,7 +62,7 @@ const serviceCards = [
   {
     title: "Round Trip Airport Transfer",
     description: "Seamless two-way transfers for your complete journey.",
-    image: "/airport/f_995v7I2IU_WULC5nx6bbyQiqDV4gAPnX_tHzexfjtVvaq5xfj36juh1gaftbR7tNqTRsNKaJeGO5S_43hZLHX_IhKkYlwGTelS11yVsjrA00aKEJRO6kRPhByso2Sk3PSQ1YdedVGJ-2U9JyJ06DUHGgvdUAMxPdgQp7M_DLg.jpg",
+    image: "/airport/airport (3).jpg",
     details: [
       "✈ Airport Pickup & Return Drop",
       "🚖 Door-to-Door Transfer Service",
@@ -118,7 +118,7 @@ export default function AirportServices() {
           >
             <div className="relative aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl group">
               <Image 
-                src="/airport/voqJ-x2VX5N7oJfFRLJtozBEBi2sBij9vYWfnx1Dn8mfqUp6GhhkIkBLfPgjbqGqq6Xehr3Dwe9vrPw_b6C8OyC_WKlfzTq4GLT7levZIIiT2f-949nSZiCqhKHSZmW2xC002gD719VU2o0ltNqnu2u-0fYkJ-ZWn7koAK7NiIioGh8PdF_3NZtBChchw006.jpg" 
+                src="/airport-taxi.jpg" 
                 alt="Premium Airport Taxi Service"
                 fill
                 priority

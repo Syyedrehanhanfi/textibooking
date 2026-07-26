@@ -73,7 +73,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
     duration: "2 Days 1 Night",
     price: 14000,
     highlights: ["Toy Train", "Nature"],
-    image: "/package/matheran.jpg",
+    image: "/package/Matheran.jpg",
     description: "Step into a world without cars in Matheran, Asia's only automobile-free hill station. Enjoy a nostalgic ride on the famous Toy Train, explore dense forests, and take in panoramic views from numerous scenic points on this refreshing eco-friendly retreat."
   },
   {
