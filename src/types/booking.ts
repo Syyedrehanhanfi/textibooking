@@ -19,7 +19,7 @@ export interface BookingFormData {
 export interface Vehicle {
   id: string;
   name: string;
-  category: "Sedan" | "SUV" | "Luxury" | "Traveller";
+  category: "Sedan" | "SUV" | "MUV" | "Luxury" | "Traveller" | "Van";
   categoryBadge: string;
   pricePerKmDisplay: string;
   ratePerKm: number;
