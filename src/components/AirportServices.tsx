@@ -119,7 +119,7 @@ export default function AirportServices() {
             <div className="relative aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl group">
               <Image 
                 src="/airport-taxi.jpg" 
-                alt="Premium Airport Taxi Service"
+                alt="Premium Airport Taxi Service in Surat"
                 fill
                 priority
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -231,7 +231,7 @@ export default function AirportServices() {
                 >
                   <Image
                     src={card.image}
-                    alt={card.title}
+                    alt={`${card.title} Taxi in Surat`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -368,7 +368,7 @@ export default function AirportServices() {
               <div className="relative h-48 sm:h-64 w-full shrink-0">
                 <Image
                   src={selectedService.image}
-                  alt={selectedService.title}
+                  alt={`${selectedService.title} Taxi in Surat`}
                   fill
                   className="object-cover"
                 />

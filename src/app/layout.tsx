@@ -20,16 +20,18 @@ const siteUrl = "https://www.khodaltourscab.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Khodal Tours | Surat's Premium Local & Outstation Taxi Service",
+  title: "Khodal Tours | Best Taxi Service in Surat | Outstation Cabs",
   description:
-    "Book reliable local, outstation, and airport cabs from Surat with zero hidden charges. Direct instant booking via WhatsApp. Best taxi service in Surat.",
+    "Book reliable local, outstation, and airport cabs from Surat with Khodal Tours. Transparent per-KM rates, Innova, Sedan & SUVs. 24x7 WhatsApp instant booking.",
   keywords: [
+    "taxi service in surat",
     "surat taxi",
+    "cab booking surat",
     "surat to mumbai cab",
     "outstation taxi surat",
-    "airport drop taxi",
-    "local cab rental",
-    "innova crysta booking",
+    "airport drop taxi surat",
+    "local cab rental surat",
+    "innova crysta booking surat",
     "sedan cab service",
     "whatsapp taxi booking",
   ],
@@ -38,24 +40,24 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Khodal Tours | Surat's Premium Taxi Service",
+    title: "Khodal Tours | Best Taxi Service in Surat",
     description:
       "Instant WhatsApp cab booking in Surat for city rentals, airport transfers, and outstation trips. Transparent per-KM rates and verified chauffeurs.",
     type: "website",
     url: siteUrl,
-    siteName: "Khodal Tours Cab",
+    siteName: "Khodal Tours Surat",
     images: [
       {
         url: "/about/main.jpg",
         width: 1200,
         height: 630,
-        alt: "Khodal Tours Premium Cabs",
+        alt: "Khodal Tours Premium Cabs in Surat",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khodal Tours | Surat's Premium Taxi Service",
+    title: "Khodal Tours | Best Taxi Service in Surat",
     description: "Instant WhatsApp cab booking in Surat for city rentals, airport transfers, and outstation trips.",
     images: ["/about/main.jpg"],
   },
@@ -66,43 +68,69 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TaxiService",
-    "name": AGENCY_CONFIG.name,
-    "image": `${siteUrl}${AGENCY_CONFIG.logoPath}`,
-    "@id": siteUrl,
-    "url": siteUrl,
-    "telephone": AGENCY_CONFIG.phoneNumber,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "153, 3rd Floor, Samla Ground, Laskana, Varachha",
-      "addressLocality": "Surat",
-      "postalCode": "395006",
-      "addressRegion": "Gujarat",
-      "addressCountry": "IN"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "TaxiService"],
+      "name": AGENCY_CONFIG.name,
+      "image": `${siteUrl}${AGENCY_CONFIG.logoPath}`,
+      "@id": siteUrl,
+      "url": siteUrl,
+      "telephone": AGENCY_CONFIG.phoneNumber,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "153, 3rd Floor, Samla Ground, Laskana, Varachha",
+        "addressLocality": "Surat",
+        "postalCode": "395006",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.2408,
+        "longitude": 72.9348
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Surat"
+        },
+        {
+          "@type": "State",
+          "name": "Gujarat"
+        }
+      ]
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 21.2408,
-      "longitude": 72.9348
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "priceRange": "$$"
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Khodal Tours",
+      "url": siteUrl,
+      "logo": `${siteUrl}${AGENCY_CONFIG.logoPath}`,
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": AGENCY_CONFIG.phoneNumber,
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi", "gu"]
+      }
+    }
+  ];
 
   return (
     <html

@@ -64,7 +64,7 @@ export default function Hero() {
             >
               <Image
                 src={heroImages[currentIndex]}
-                alt={`${AGENCY_CONFIG.name} Banner ${currentIndex + 1}`}
+                alt={`Premium Outstation Taxi Service in Surat - Khodal Tours Banner ${currentIndex + 1}`}
                 fill
                 priority={currentIndex === 0}
                 quality={95}

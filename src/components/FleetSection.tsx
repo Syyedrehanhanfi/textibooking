@@ -97,7 +97,7 @@ export default function FleetSection() {
               >
                 <Image
                   src={vehicle.image}
-                  alt={vehicle.name}
+                  alt={`${vehicle.name} Taxi Cab in Surat`}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-contain p-2 group-hover/img:scale-105 transition-transform duration-500"
@@ -249,7 +249,7 @@ export default function FleetSection() {
               <div className="relative aspect-[16/10] w-full rounded-[14px] overflow-hidden bg-slate-950 flex items-center justify-center group">
                 <Image
                   src={currentGalleryImages[galleryIndex]}
-                  alt={`${galleryVehicle.name} Photo ${galleryIndex + 1}`}
+                  alt={`${galleryVehicle.name} Cab Service in Surat - View ${galleryIndex + 1}`}
                   fill
                   sizes="100vw"
                   className="object-contain"
