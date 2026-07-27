@@ -1,7 +1,5 @@
 import React from "react";
 import type { Metadata } from "next";
-import FareEstimator from "@/components/FareEstimator";
-import PopularRoutes from "@/components/PopularRoutes";
 import AirportServices from "@/components/AirportServices";
 
 export const metadata: Metadata = {
@@ -15,8 +13,6 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="py-4 animate-fade-in">
-      <FareEstimator />
-      <PopularRoutes />
       <AirportServices />
     </div>
   );

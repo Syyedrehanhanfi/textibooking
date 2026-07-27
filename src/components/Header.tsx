@@ -18,7 +18,7 @@ export default function Header() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Our Cabs", href: "/fleet" },
-    { label: "Airport Transfer", href: "/#airport" },
+    { label: "Airport Transfer", href: "/services" },
     { label: "Tour Packages", href: "/#tours" },
     { label: "Gallery", href: "/#gallery" },
     { label: "Reviews", href: "/#reviews" },
