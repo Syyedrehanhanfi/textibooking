@@ -65,10 +65,10 @@ export default function FleetSection() {
         {/* Centered Section Title */}
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f172a] tracking-tight">
-            Available Vehicles
+            Premium Fleet & Innova on Rent in Surat
           </h2>
-          <p className="text-slate-500 text-xs font-medium mt-1">
-            Click on vehicle image to view all photos
+          <p className="text-slate-500 text-sm font-medium mt-2">
+            Browse our top-condition Sedans, Premium SUVs, and Innova Crysta cabs for outstation and local trips. Click on a vehicle image to view photos.
           </p>
         </div>
 

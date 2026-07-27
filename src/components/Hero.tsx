@@ -117,15 +117,15 @@ export default function Hero() {
 
           {/* Main H1 Heading */}
           <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.2]">
-            Surat's Premier Outstation & Local Taxi Service <br className="hidden sm:block" />
+            Best Taxi Service in Surat for Outstation & Local <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">
-              At Best Per-KM Rates
+              Affordable Cab Booking
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-slate-600 text-base sm:text-lg font-semibold leading-relaxed max-w-2xl mx-auto">
-            Book Sedan, SUV & Innova Crysta cabs from Surat for one-way drops, round trips, and airport transfers with 24/7 doorstep pickup and zero hidden charges.
+            Experience a reliable taxi service in Surat. Book Sedan, Premium SUV, or Innova cabs for outstation trips, local sightseeing, and airport transfers with transparent fares.
           </p>
 
           {/* Value Badges */}

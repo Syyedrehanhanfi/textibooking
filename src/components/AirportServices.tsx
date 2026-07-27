@@ -30,7 +30,7 @@ const featuresList = [
 const serviceCards = [
   {
     title: "Airport Pickup",
-    description: "Reliable airport pickups with flight tracking and meet & greet.",
+    description: "Reliable airport taxi pickups in Surat with flight tracking and meet & greet.",
     image: "/airport/airport (1).jpg",
     details: [
       "✈ Real-Time Flight Tracking",
@@ -46,7 +46,7 @@ const serviceCards = [
   },
   {
     title: "Airport Drop",
-    description: "Timely drops to ensure you never miss your flight.",
+    description: "Timely outstation airport drops to ensure you never miss your flight.",
     image: "/airport/airport (2).jpg",
     details: [
       "🚖 Door-to-Airport Transfer",
@@ -61,7 +61,7 @@ const serviceCards = [
   },
   {
     title: "Round Trip Airport Transfer",
-    description: "Seamless two-way transfers for your complete journey.",
+    description: "Seamless two-way airport cab transfers from Surat for your complete journey.",
     image: "/airport/airport (3).jpg",
     details: [
       "✈ Airport Pickup & Return Drop",
@@ -142,7 +142,7 @@ export default function AirportServices() {
                 <span className="text-blue-600">Drop Services</span>
               </h2>
               <p className="text-slate-600 text-lg font-medium leading-relaxed">
-                Reliable 24×7 airport transfers with professional drivers.
+                Book a reliable 24×7 Surat airport drop or Mumbai airport taxi from Surat with our professional drivers.
               </p>
             </motion.div>
 

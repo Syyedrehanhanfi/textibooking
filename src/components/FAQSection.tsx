@@ -8,32 +8,24 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      q: "Do you provide airport pickup and drop services?",
-      a: "Yes. We offer 24×7 airport pickup and drop services with real-time flight tracking, meet & greet assistance, and on-time pickups.",
+      q: "What is the outstation taxi fare from Surat?",
+      a: "Outstation taxi fares from Surat start at highly affordable rates depending on the vehicle type (Sedan, SUV, or Innova). We offer clear per-km pricing with no hidden return fare tricks.",
     },
     {
-      q: "Are there any hidden charges or extra fees?",
-      a: "No. We follow transparent pricing with no hidden charges. Toll, parking, or driver allowance (if applicable) will be clearly communicated before confirmation.",
+      q: "Are there any hidden charges in your Surat cab booking?",
+      a: "No. We offer 100% transparent pricing for every Surat cab booking. Tolls and parking are communicated upfront, ensuring you never face unexpected fees.",
     },
     {
-      q: "Can I modify or cancel my booking?",
-      a: "Yes. You can contact our support team to modify or cancel your booking. Cancellation terms may vary depending on the booking type and timing.",
+      q: "How can I book a taxi from Surat to Mumbai airport?",
+      a: "You can book a taxi from Surat to Mumbai airport instantly via our WhatsApp number or by calling our 24/7 customer support. We guarantee on-time pickup.",
     },
     {
-      q: "What types of vehicles are available?",
-      a: "We offer Hatchbacks, Sedans, SUVs, MPVs, Tempo Travellers, and Luxury Cars for local trips, outstation travel, airport transfers, corporate travel, and family tours.",
+      q: "Is Innova Crysta available for rent in Surat?",
+      a: "Yes. We offer premium AC Innova Crysta and SUV cabs on rent in Surat for family trips, outstation tours, and corporate travel.",
     },
     {
-      q: "Is luggage included in the vehicle capacity?",
-      a: "Yes. Each vehicle has a recommended luggage capacity. Our team can help you choose the right vehicle based on the number of passengers and bags.",
-    },
-    {
-      q: "Do you provide one-way and round-trip taxi services?",
-      a: "Yes. We provide one-way, round-trip, local sightseeing, outstation travel, and multi-day tour packages.",
-    },
-    {
-      q: "Which cities and airports do you serve?",
-      a: "We provide taxi services across Gujarat, Rajasthan, Maharashtra, and nearby destinations, including airport transfers to Ahmedabad, Surat, Vadodara, Rajkot, Mumbai, Udaipur, and Jaipur Airports.",
+      q: "Do you provide one-way cab service from Surat?",
+      a: "Yes. We provide affordable one-way cab services from Surat to destinations like Ahmedabad, Vadodara, Mumbai, and Statue of Unity.",
     },
   ];
 
@@ -50,7 +42,7 @@ export default function FAQSection() {
             Everything You Need To Know
           </h2>
           <p className="text-slate-600 font-medium text-sm sm:text-base">
-            Got questions about our travel agency taxi services? Here are answers to common queries.
+            Got questions about our Surat taxi service and cab booking? Here are answers to common queries.
           </p>
         </div>
 

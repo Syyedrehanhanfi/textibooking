@@ -66,31 +66,31 @@ export default function FeaturesSection() {
     {
       number: "02",
       title: "Lowest Per-KM Rates",
-      desc: "Enjoy affordable outstation taxi fares from Surat with zero hidden charges or return fare tricks.",
+      desc: "Enjoy affordable outstation taxi fares from Surat with zero hidden charges. We offer transparent pricing for every cab booking.",
       icon: DollarSign,
     },
     {
       number: "03",
       title: "Expert Local Drivers",
-      desc: "Travel safely with verified, polite chauffeurs who know every route in Gujarat and Maharashtra.",
+      desc: "Travel safely with verified chauffeurs who know every route in Gujarat and Maharashtra for a seamless outstation cab experience.",
       icon: UserCheck,
     },
     {
       number: "04",
       title: "Sanitized Premium Fleet",
-      desc: "Book clean AC Sedan, SUV, or Innova cabs equipped with GPS for a comfortable journey.",
+      desc: "Book a clean AC Sedan, SUV, or hire an Innova on rent in Surat, fully equipped with GPS for a comfortable journey.",
       icon: Car,
     },
     {
       number: "05",
       title: "Instant WhatsApp Booking",
-      desc: "Skip the apps! Book your cab in seconds via WhatsApp or call our 24/7 customer support.",
+      desc: "Skip the apps! Book your Surat cab in seconds via WhatsApp or call our 24/7 customer support for outstation taxi inquiries.",
       icon: Headphones,
     },
     {
       number: "06",
       title: "All-in-One Travel",
-      desc: "Top choice for Surat local sightseeing, one-way outstation drops, airport transfers, and wedding cars.",
+      desc: "The top choice for Surat local sightseeing, one-way outstation drops, airport transfers, and wedding car rentals.",
       icon: Compass,
     },
   ];
@@ -193,10 +193,10 @@ export default function FeaturesSection() {
                 <ShieldCheck className="w-4 h-4" /> About Us
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-                Your Trusted Taxi Service in Surat & Gujarat
+                Highly Reliable Taxi Service in Surat & Gujarat
               </h2>
               <p className="text-slate-600 text-base leading-relaxed font-medium">
-                {AGENCY_CONFIG.name} is Surat's premium travel and transport agency dedicated to providing safe, comfortable, and reliable cab services. Whether you need a local Surat taxi, an airport drop, or an outstation tour package, our focus is entirely on your comfort and peace of mind.
+                {AGENCY_CONFIG.name} is Surat's top-rated travel agency dedicated to providing safe, comfortable, and affordable cab services. Whether you need a local Surat taxi, an airport drop, or an outstation tour package, our verified drivers ensure a seamless ride.
               </p>
             </div>
 

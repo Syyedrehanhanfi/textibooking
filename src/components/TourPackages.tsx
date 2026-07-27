@@ -127,7 +127,7 @@ export default function TourPackages() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-5"
           >
-            Popular <span className="text-blue-600">Tour Packages</span>
+            Outstation Taxi <span className="text-blue-600">Tour Packages from Surat</span>
           </motion.h2>
           
           <motion.p
@@ -137,7 +137,7 @@ export default function TourPackages() {
             transition={{ delay: 0.2 }}
             className="text-lg text-slate-600"
           >
-            Explore Gujarat, Maharashtra & India's most loved pilgrimage and family tour destinations with our expertly crafted itineraries.
+            Book outstation cabs from Surat to explore Gujarat, Maharashtra, and India's top pilgrimage destinations with our expertly crafted tour packages.
           </motion.p>
         </div>
 
