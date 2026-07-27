@@ -105,21 +105,15 @@ export default function RootLayout({
         "closes": "23:59"
       },
       "priceRange": "$$",
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Surat"
-        },
-        {
-          "@type": "State",
-          "name": "Gujarat"
-        }
-      ]
+      "areaServed": AGENCY_CONFIG.topCities.map(city => ({
+        "@type": city === "Rajasthan (All)" ? "State" : "City",
+        "name": city.replace(" (All)", "")
+      }))
     },
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Khodal Tours",
+      "name": AGENCY_CONFIG.name,
       "url": siteUrl,
       "logo": `${siteUrl}${AGENCY_CONFIG.logoPath}`,
       "contactPoint": {
