@@ -27,10 +27,10 @@ export default function FeaturesSection() {
 
   // Selected 5 premium images for the mobile carousel
   const carouselImages = [
-    { src: "/about/main.jpg", label: "Luxury Innova" },
+    { src: "/about/main.jpg", label: "Tempo Traveller" },
     { src: "/about/122d4302-dbf5-47c5-a31f-7193abfb7193.jpg", label: "Premium SUV" },
-    { src: "/about/894482e0-8f5a-44ff-b899-6e2d1c2d6a94.jpg", label: "Clean Interiors" },
-    { src: "/about/beab00df-fb72-427a-9afd-65e248ff6819.jpg", label: "Professional Drivers" },
+    { src: "/about/894482e0-8f5a-44ff-b899-6e2d1c2d6a94.jpg", label: "Comfortable Rides" },
+    { src: "/about/beab00df-fb72-427a-9afd-65e248ff6819.jpg", label: "24/7 Availability & Instant Booking" },
   ];
 
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {

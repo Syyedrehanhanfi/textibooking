@@ -7,7 +7,7 @@ import { AGENCY_CONFIG } from "@/config/config";
 
 export default function MobileQuickDock() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 p-2.5 shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 p-2.5 shadow-2xl">
       <div className="grid grid-cols-2 gap-2 max-w-md mx-auto">
         <a
           href={`tel:${AGENCY_CONFIG.phoneNumber}`}

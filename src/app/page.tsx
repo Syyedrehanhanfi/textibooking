@@ -20,7 +20,7 @@ export default function Home() {
   const [activeView, setActiveView] = useState("home");
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white pb-16 sm:pb-0">
+    <div className="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white pb-16 md:pb-0">
       {/* Sticky 80px Navigation Header with Tab State */}
       <Header activeView={activeView} setActiveView={setActiveView} />
 
