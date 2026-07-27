@@ -24,26 +24,42 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Do you provide airport pickup and drop services?",
+        "name": "What is the outstation taxi fare from Surat?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We offer 24×7 airport pickup and drop services with real-time flight tracking, meet & greet assistance, and on-time pickups."
+          "text": "Outstation taxi fares from Surat start at highly affordable rates depending on the vehicle type (Sedan, SUV, or Innova). We offer clear per-km pricing with no hidden return fare tricks."
         }
       },
       {
         "@type": "Question",
-        "name": "Are there any hidden charges or extra fees?",
+        "name": "Are there any hidden charges in your Surat cab booking?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. We follow transparent pricing with no hidden charges. Toll, parking, or driver allowance (if applicable) will be clearly communicated before confirmation."
+          "text": "No. We offer 100% transparent pricing for every Surat cab booking. Tolls and parking are communicated upfront, ensuring you never face unexpected fees."
         }
       },
       {
         "@type": "Question",
-        "name": "Which cities and airports do you serve?",
+        "name": "How can I book a taxi from Surat to Mumbai airport?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We provide taxi services across Gujarat, Rajasthan, Maharashtra, and nearby destinations, including airport transfers to Ahmedabad, Surat, Vadodara, Rajkot, Mumbai, Udaipur, and Jaipur Airports."
+          "text": "You can book a taxi from Surat to Mumbai airport instantly via our WhatsApp number or by calling our 24/7 customer support. We guarantee on-time pickup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Innova Crysta available for rent in Surat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer premium AC Innova Crysta and SUV cabs on rent in Surat for family trips, outstation tours, and corporate travel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide one-way cab service from Surat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide affordable one-way cab services from Surat to destinations like Ahmedabad, Vadodara, Mumbai, and Statue of Unity."
         }
       }
     ]

@@ -7,12 +7,22 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { sendGeneralInquiryWhatsApp } from "@/utils/whatsapp";
 import { AGENCY_CONFIG } from "@/config/config";
 
+const POPULAR_ROUTES = [
+  { label: "Surat to Mumbai Taxi", href: "/surat-to-mumbai-taxi" },
+  { label: "Surat to Ahmedabad Taxi", href: "/surat-to-ahmedabad-taxi" },
+  { label: "Surat to Vadodara Taxi", href: "/surat-to-vadodara-taxi" },
+  { label: "Surat to Udaipur Taxi", href: "/surat-to-udaipur-taxi" },
+  { label: "Surat to Mount Abu Taxi", href: "/surat-to-mount-abu-taxi" },
+  { label: "Surat Airport Taxi", href: "/surat-airport-taxi" },
+  { label: "Mumbai Airport to Surat", href: "/mumbai-airport-to-surat-taxi" },
+];
+
 export default function Footer() {
   return (
     <footer id="contact" className="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
           
           {/* Brand Info with Official KHODAL TOURS Logo */}
           <div className="space-y-4">
@@ -82,6 +92,20 @@ export default function Footer() {
               <li>
                 <Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Popular Routes */}
+          <div className="space-y-3">
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Popular Routes</h4>
+            <ul className="space-y-2 text-xs font-semibold text-slate-400">
+              {POPULAR_ROUTES.map((route, idx) => (
+                <li key={idx}>
+                  <Link href={route.href} className="hover:text-cyan-400 transition-colors">
+                    {route.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

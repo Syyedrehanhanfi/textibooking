@@ -32,6 +32,20 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       siteName: AGENCY_CONFIG.name,
       locale: 'en_IN',
       type: 'website',
+      images: [
+        {
+          url: '/about/main.jpg',
+          width: 1200,
+          height: 630,
+          alt: `${route.h1} | ${AGENCY_CONFIG.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: route.title,
+      description: route.description,
+      images: ['/about/main.jpg'],
     },
   };
 }
