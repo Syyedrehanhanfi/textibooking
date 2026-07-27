@@ -114,7 +114,7 @@ export default function FeaturesSection() {
             <div className="relative aspect-[4/3] sm:aspect-[16/10] w-full rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
               <Image
                 src={carouselImages[activeCarouselIndex].src}
-                alt={carouselImages[activeCarouselIndex].label}
+                alt={`${carouselImages[activeCarouselIndex].label} Taxi in Surat`}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 60vw"
@@ -149,7 +149,7 @@ export default function FeaturesSection() {
                       activeCarouselIndex === idx ? 'border-blue-500 shadow-md scale-100' : 'border-transparent opacity-60 scale-95 hover:opacity-100'
                     }`}
                   >
-                    <Image src={img.src} alt={img.label} fill sizes="320px" className="object-cover" />
+                    <Image src={img.src} alt={`${img.label} Cab Service`} fill sizes="320px" className="object-cover" />
                   </button>
                 ))}
               </div>
@@ -172,7 +172,7 @@ export default function FeaturesSection() {
                     activeCarouselIndex === idx ? 'border-blue-500 shadow-sm' : 'border-transparent opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <Image src={img.src} alt={img.label} fill sizes="120px" className="object-cover" />
+                  <Image src={img.src} alt={`${img.label} Cab Service`} fill sizes="120px" className="object-cover" />
                 </button>
               ))}
             </div>

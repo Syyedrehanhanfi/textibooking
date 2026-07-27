@@ -24,7 +24,7 @@ const TourCard = ({ pkg, index, onImageClick }: { pkg: TourPackage; index: numbe
       >
         <Image
           src={pkg.image}
-          alt={pkg.title}
+          alt={`${pkg.title} Tour Package from Surat`}
           fill
           className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
@@ -199,7 +199,7 @@ export default function TourPackages() {
             <div className="relative h-64 sm:h-80 w-full group">
               <Image
                 src={selectedTour.galleryImages ? selectedTour.galleryImages[activeImageIndex] : selectedTour.image}
-                alt={selectedTour.title}
+                alt={`${selectedTour.title} Tour Package from Surat`}
                 fill
                 className="object-cover transition-opacity duration-500"
               />
