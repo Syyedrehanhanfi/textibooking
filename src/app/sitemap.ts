@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
+import { SEO_ROUTES } from "@/data/seoRoutesData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.khodaltourscab.com";
 
-  return [
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}`,
       lastModified: new Date(),
@@ -35,4 +36,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
   ];
+
+  const dynamicRoutes: MetadataRoute.Sitemap = SEO_ROUTES.map((route) => ({
+    url: `${baseUrl}/${route.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
+
+  return [...staticRoutes, ...dynamicRoutes];
 }
