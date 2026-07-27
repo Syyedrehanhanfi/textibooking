@@ -105,7 +105,7 @@ export default function TourPackages() {
   };
 
   return (
-    <section className="py-20 bg-slate-50" id="tour-packages" ref={sectionRef}>
+    <section className="py-20 bg-slate-50" id="tours" ref={sectionRef}>
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

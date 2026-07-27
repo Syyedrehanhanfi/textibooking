@@ -65,7 +65,7 @@ export default function Footer() {
                 <Link href="/fleet" className="hover:text-cyan-400 transition-colors">Our Cabs</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-cyan-400 transition-colors">Airport Transfer</Link>
+                <Link href="/#airport" className="hover:text-cyan-400 transition-colors">Airport Transfer</Link>
               </li>
               <li>
                 <Link href="/#tours" className="hover:text-cyan-400 transition-colors">Tour Packages</Link>

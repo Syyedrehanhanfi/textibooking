@@ -63,7 +63,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-slate-100/70 border-y border-slate-200/80 relative">
+    <section className="py-16 lg:py-24 bg-slate-100/70 border-y border-slate-200/80 relative" id="reviews">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
