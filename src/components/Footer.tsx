@@ -2,7 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { Phone, Mail, MapPin, MessageSquare, ShieldCheck } from "lucide-react";
+import Link from "next/link";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { sendGeneralInquiryWhatsApp } from "@/utils/whatsapp";
 import { AGENCY_CONFIG } from "@/config/config";
 
@@ -55,31 +56,31 @@ export default function Footer() {
             <h4 className="text-sm font-bold text-white uppercase tracking-wider">Quick Navigation</h4>
             <ul className="space-y-2 text-xs font-semibold text-slate-400">
               <li>
-                <a href="#home" className="hover:text-cyan-400 transition-colors">Home</a>
+                <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
               </li>
               <li>
-                <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
+                <Link href="/about" className="hover:text-cyan-400 transition-colors">About</Link>
               </li>
               <li>
-                <a href="#fleet" className="hover:text-cyan-400 transition-colors">Our Cabs</a>
+                <Link href="/fleet" className="hover:text-cyan-400 transition-colors">Our Cabs</Link>
               </li>
               <li>
-                <a href="#airport" className="hover:text-cyan-400 transition-colors">Airport Transfer</a>
+                <Link href="/services" className="hover:text-cyan-400 transition-colors">Airport Transfer</Link>
               </li>
               <li>
-                <a href="#tours" className="hover:text-cyan-400 transition-colors">Tour Packages</a>
+                <Link href="/#tours" className="hover:text-cyan-400 transition-colors">Tour Packages</Link>
               </li>
               <li>
-                <a href="#gallery" className="hover:text-cyan-400 transition-colors">Gallery</a>
+                <Link href="/#gallery" className="hover:text-cyan-400 transition-colors">Gallery</Link>
               </li>
               <li>
-                <a href="#reviews" className="hover:text-cyan-400 transition-colors">Reviews</a>
+                <Link href="/#reviews" className="hover:text-cyan-400 transition-colors">Reviews</Link>
               </li>
               <li>
-                <a href="#faq" className="hover:text-cyan-400 transition-colors">FAQ</a>
+                <Link href="/#faq" className="hover:text-cyan-400 transition-colors">FAQ</Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
+                <Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
               </li>
             </ul>
           </div>

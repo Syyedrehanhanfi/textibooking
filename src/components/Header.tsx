@@ -2,36 +2,29 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, MessageSquare, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { sendGeneralInquiryWhatsApp } from "@/utils/whatsapp";
 import { AGENCY_CONFIG } from "@/config/config";
 
-interface HeaderProps {
-  activeView?: string;
-  setActiveView?: (view: string) => void;
-}
-
-export default function Header({ activeView = "home", setActiveView }: HeaderProps) {
+export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(activeView);
+  const pathname = usePathname();
 
   const navItems = [
-    { label: "Home", href: "#home", id: "home" },
-    { label: "About", href: "#about", id: "about" },
-    { label: "Our Cabs", href: "#fleet", id: "fleet" },
-    { label: "Airport Transfer", href: "#airport", id: "airport" },
-    { label: "Tour Packages", href: "#tours", id: "tours" },
-    { label: "Gallery", href: "#gallery", id: "gallery" },
-    { label: "Reviews", href: "#reviews", id: "reviews" },
-    { label: "FAQ", href: "#faq", id: "faq" },
-    { label: "Contact", href: "#contact", id: "contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Our Cabs", href: "/fleet" },
+    { label: "Airport Transfer", href: "/services" },
+    { label: "Tour Packages", href: "/#tours" },
+    { label: "Gallery", href: "/#gallery" },
+    { label: "Reviews", href: "/#reviews" },
+    { label: "FAQ", href: "/#faq" },
+    { label: "Contact", href: "/contact" },
   ];
-
-  useEffect(() => {
-    setActiveSection(activeView);
-  }, [activeView]);
 
   // Scroll spy & shadow handler
   useEffect(() => {
@@ -42,25 +35,6 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault();
-    setMobileMenuOpen(false);
-    setActiveSection(targetId);
-
-    if (setActiveView) {
-      setActiveView(targetId);
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const element = document.getElementById(targetId);
-      if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-      }
-    }
-  };
 
   const handleWhatsAppClick = () => {
     setMobileMenuOpen(false);
@@ -78,9 +52,9 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex items-center justify-between">
         
         {/* Left: KHODAL TOURS Official Logo */}
-        <a
-          href="#home"
-          onClick={(e) => handleNavClick(e, "home")}
+        <Link
+          href="/"
+          onClick={() => setMobileMenuOpen(false)}
           className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-xl shrink-0"
           aria-label={`${AGENCY_CONFIG.name} Home`}
         >
@@ -107,7 +81,7 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
               {AGENCY_CONFIG.tagline}
             </p>
           </div>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <nav
@@ -115,13 +89,14 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
           aria-label="Main Navigation"
         >
           {navItems.map((item) => {
-            const isActive = activeSection === item.id;
+            const isHashLink = item.href.includes('#');
+            const isActive = isHashLink ? false : (item.href === '/' ? pathname === '/' : pathname?.startsWith(item.href));
+
             return (
-              <a
-                key={item.id}
+              <Link
+                key={item.label}
                 href={item.href}
-                onClick={(e) => handleNavClick(e, item.id)}
-                className={`relative px-1.5 xl:px-2.5 py-1.5 rounded-[10px] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 whitespace-nowrap ${
+                className={`relative px-1.5 xl:px-2.5 py-1.5 rounded-[10px] transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 whitespace-nowrap ${
                   isActive ? "text-blue-600 font-black" : "hover:text-blue-600 text-slate-700"
                 }`}
               >
@@ -133,7 +108,7 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
                     transition={{ type: "spring", stiffness: 350, damping: 30 }}
                   />
                 )}
-              </a>
+              </Link>
             );
           })}
         </nav>
@@ -186,12 +161,14 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
           >
             <nav className="flex flex-col gap-1 font-bold text-slate-800 text-base">
               {navItems.map((item) => {
-                const isActive = activeSection === item.id;
+                const isHashLink = item.href.includes('#');
+                const isActive = isHashLink ? false : (item.href === '/' ? pathname === '/' : pathname?.startsWith(item.href));
+
                 return (
-                  <a
-                    key={item.id}
+                  <Link
+                    key={item.label}
                     href={item.href}
-                    onClick={(e) => handleNavClick(e, item.id)}
+                    onClick={() => setMobileMenuOpen(false)}
                     className={`px-4 py-3 rounded-[14px] transition-colors flex items-center justify-between ${
                       isActive
                         ? "bg-blue-50 text-blue-600 font-black"
@@ -200,7 +177,7 @@ export default function Header({ activeView = "home", setActiveView }: HeaderPro
                   >
                     <span>{item.label}</span>
                     {isActive && <div className="w-2 h-2 rounded-full bg-blue-600" />}
-                  </a>
+                  </Link>
                 );
               })}
             </nav>
